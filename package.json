@@ -17,7 +17,8 @@
     "build:typescript": "tsc -p tsconfig.lib.json --outDir _dist --declaration true --declarationDir dist/types",
     "build:rollup": "npm-run-all -p build:rollup:*",
     "build:rollup:module": "cross-env BABEL_ENV=build-module rollup -c",
-    "build:rollup:esnext": "cross-env BABEL_ENV=build-esnext rollup -c --o dist/esnext/index.js --output.format es"
+    "build:rollup:esnext": "cross-env BABEL_ENV=build-esnext rollup -c --o dist/esnext/index.js --output.format es",
+    "publish": "npm publish --access public"
   },
   "files": [
     "dist"
