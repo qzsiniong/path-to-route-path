@@ -1,0 +1,23 @@
+{
+    "env": {
+        "build-module": {
+            "plugins": [
+                ["@babel/transform-runtime", {
+                    "useESModules": true
+                }]
+            ],
+            "presets": [
+                ["@babel/env", {
+                    "modules": false
+                }]
+            ]
+        },
+        "build-esnext": {
+            "plugins": [
+                ["@babel/transform-runtime", {
+                    "useESModules": true
+                }]
+            ]
+        }
+    }
+}

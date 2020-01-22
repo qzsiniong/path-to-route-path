@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '6'
+- '8'
+- '10'
+script:
+- npm run build
+- npm test
+deploy:
+  provider: npm
+  email: cameronmartin123@gmail.com
+  api_key:
+    secure: juGWN5fodNcR3HwzlzxrK9CbmLI9dCeh613uajYaeGyqdWe+9Odp2mWa1VJe4T98CEPxxl37zscZj5tHxlYy27+dIuWo1Ko6eNJR0snG9RHoa18WiI9zUJd4PHrby6BwPPW/Li+4WAZaxKRW7w6C/Tg+mXjOOCAbIN5yQujQXH8mmOTzXzOrx2Vp2EzQUGZArydqetluuy+pj7tH4IGLHE4rsUO0ftpRTjMQlXItWDxrNar7Wv4c1ugVdRgWUwTgGE9vAHWq2Fo41NdiFaIdIXFux3iwqMxlr4Ufo8myCJtOufvVgdZ1QsdXFUuMDlIkOJl3I2uMFbTZPfhV3s14k88axYwXghfXybQGj9w2ZGVxKNKRofCo4zBZxyXLm192O5Z0amWEXE6eG7P570u8HcWi8XahwlGYrB6ATt6XaHc+RkkD4dFBBj6IeyXg1aYv1meuEU6kyu2CQPsbt+l+9c3Tdop7BRwRNMrKePcXY1aRxuZfGBcXbwom3jP+HfaGNTZCSDmPiJM4rhKjnETe7lqoebHwAj8Z6EKdUoVrKU5n2wTyj98QhRWTMRDOwqGzpbbmZaITY3vcMQShOAIT+lOkoVjdjkIw80veg6HF7TbMItBoEwnASAkrHDxAyWYPS/kcdPmyDLEmRs4cfAy8vAUJopf+F9GuNWen58qtMxo=
+  on:
+    tags: true
+    repo: cameron-martin/typescript-library-boilerplate
+  skip_cleanup: true
